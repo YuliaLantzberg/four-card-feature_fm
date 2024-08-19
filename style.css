@@ -66,13 +66,24 @@ h1 {
 	max-height: 25rem;
 	min-height: 22.2rem;
 	background-color: #fff;
-	border-top: solid 0.4rem;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	border-radius: 0.8rem;
 	box-shadow: -1px 10px 15px rgba(174, 172, 163, 0.3);
 	margin-bottom: 3rem;
+	position: relative;
+	z-index: 100;
+}
+
+.card__top-border {
+	width: 100%;
+	height: 0.4rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .card__title {
@@ -102,25 +113,31 @@ h1 {
 	line-height: 1.8;
 	letter-spacing: 0.9px;
 }
-
 #supervisor {
 	grid-area: 2/1/4/3;
-	border-color: #44d3d2;
 }
-
+#supervisor .card__top-border {
+	background-color: #44d3d2;
+}
 #team-builder {
 	grid-area: 1/2/3/3;
-	border-color: #ea5454;
 }
-
+#team-builder .card__top-border {
+	background-color: #ea5454;
+}
 #karma {
 	grid-area: 3/2/5/3;
-	border-color: #fcae4a;
+}
+#karma .card__top-border {
+	background-color: #fcae4a;
 }
 
 #calculator {
 	grid-area: 2/3/5/3;
-	border-color: #549ef2;
+}
+
+#calculator .card__top-border {
+	background-color: #549ef2;
 }
 
 @media (max-width: 1400px) {
