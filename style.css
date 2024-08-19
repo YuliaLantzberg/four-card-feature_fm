@@ -24,7 +24,8 @@ body {
 }
 
 header {
-	width: 54rem;
+	max-width: 54rem;
+	width: 31.1rem;
 	text-align: center;
 	margin-top: 6rem;
 	margin-bottom: 6.6rem;
@@ -60,8 +61,10 @@ h1 {
 }
 
 .card {
-	width: 35rem;
-	height: 25rem;
+	max-width: 35rem;
+	min-width: 31.1rem;
+	max-height: 25rem;
+	min-height: 22.2rem;
 	background-color: #fff;
 	border-top: solid 0.4rem;
 	padding: 2rem;
@@ -88,8 +91,10 @@ h1 {
 }
 
 .card__img img {
-	width: 6.4rem;
-	height: 6.4rem;
+	max-width: 6.4rem;
+	min-width: 5.7rem;
+	min-height: 5.7rem;
+	max-height: 6.4rem;
 }
 
 .card__desc {
@@ -148,7 +153,6 @@ h1 {
 	}
 
 	header {
-		width: 31.1rem;
 		margin-top: 10rem;
 		margin-bottom: 6rem;
 	}
@@ -165,15 +169,5 @@ h1 {
 		align-items: center;
 		justify-content: center;
 		gap: 2.5rem;
-	}
-
-	.card {
-		width: 31.1rem;
-		height: 22.2rem;
-	}
-
-	.card__img img {
-		width: 5.7rem;
-		height: 5.7rem;
 	}
 }
